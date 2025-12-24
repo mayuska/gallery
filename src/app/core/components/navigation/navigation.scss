@@ -1,0 +1,16 @@
+mat-toolbar {
+  background: var(--mat-sys-primary-container);
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Use Material theme variables, not hardcoded colors */
+button.nav-active {
+  background: var(--mat-sys-primary);
+  color: var(--mat-sys-primary-fixed);
+}

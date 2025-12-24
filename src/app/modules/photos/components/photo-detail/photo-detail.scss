@@ -1,0 +1,45 @@
+/* whole content area under toolbar – no scroll */
+.photo-detail {
+  height: calc(100vh - 80px); // adjust 64px to your toolbar height
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden; // prevent scroll
+}
+
+/* card fills the box but has no visual border */
+.photo-card {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image area takes all available space */
+.photo-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* image fits without distortion, no stretching */
+.photo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; // keeps full image visible[web:52]
+}
+
+/* footer fixed at bottom, button centered */
+.photo-footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 16px;
+}

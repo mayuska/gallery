@@ -1,0 +1,16 @@
+<div class="scrollable-gallery">
+  @if (photos().length === 0) {
+
+    <div class="no-favorites-message">
+      <mat-card appearance="outlined">
+       <mat-card-content>
+         <p>You have no favorite photos yet.</p>
+         <p>Browse photos and add them to your favorites</p>
+       </mat-card-content>
+      </mat-card>
+
+    </div>
+  } @else {
+    <gallery-gallery [photos]="photos()" clickIcon="photo_size_select_large" (clicked)="openDetailView($event)"></gallery-gallery>
+  }
+</div>

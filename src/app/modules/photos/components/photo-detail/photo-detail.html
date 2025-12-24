@@ -1,0 +1,23 @@
+<div class="photo-detail">
+  <mat-card class="photo-card" appearance="outlined">
+    @if (photo()) {
+      <mat-card-content class="photo-content">
+        <img
+          mat-card-image
+          [src]="photo()!.download_url"
+          [alt]="'Photo ' + photo()!.id"
+          class="photo-img" />
+      </mat-card-content>
+
+      <mat-card-footer class="photo-footer">
+        <button mat-raised-button color="primary" (click)="removeFromFavorites()">
+          Remove from Favorites
+        </button>
+      </mat-card-footer>
+    } @else {
+      <mat-card-content class="photo-content">
+        <p>Photo not found.</p>
+      </mat-card-content>
+    }
+  </mat-card>
+</div>

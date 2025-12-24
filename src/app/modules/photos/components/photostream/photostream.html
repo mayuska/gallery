@@ -1,0 +1,10 @@
+<div class="photostream scrollable-gallery" [class.favorite-hovered]="favoriteHovered()" #scrollContainer>
+  <gallery-gallery [photos]="photos()" (clicked)="addToFavorites($event)" (hovered)="onPhotoHover($event)"></gallery-gallery>
+  @if (loading()) {
+    <div class="loader">
+      <mat-progress-spinner mode="indeterminate" diameter="32"></mat-progress-spinner>
+    </div>
+  }
+</div>
+
+

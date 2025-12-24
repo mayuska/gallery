@@ -1,0 +1,15 @@
+.favorite-hovered {
+  ::ng-deep {
+    .mat-icon {
+      color: #ec0041;
+    }
+  }
+}
+.loader {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,5 @@
+.scrollable-gallery {
+  margin-top: 15px;
+  max-height: calc(100vh - 80px); // toolbar height
+  overflow-y: auto;
+}
